@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+
+}
+body{
+  /* background-color: beige; */
+  background-image: url("https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  
+}
+  .toggle{
+   display: none;
+  
+} 
+
+.container1 , 
+.container2{
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: 3px solid;
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem 3rem;
+  background-color: white;
+  /* transform: rotate(300deg); */
+  transition: 0.3s linear 0.01s ;
+}
+.big-container{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.numer{
+  border: 1px solid blue;
+  margin: 0.5rem;
+  padding: 2rem;
+  font-size: 40px;
+  border-radius: 0.5rem;
+  
+}
+.number3,
+.number{
+  /* border:gray; */
+  border: 1px solid rgb(202, 202, 202);
+  margin: 0.5rem;
+  padding: 2rem;
+  font-size: 40px;
+  border-radius: 0.5rem;
+}
+button{
+  border: none;
+  margin: 0.5rem;
+  padding: 2rem;
+  font-size: 40px;
+  border-radius: 0.5rem;
+  letter-spacing: 1rem;
+  /* cursor: pointer; */
+}
+span{
+  color: blue;
+  
+}
+.Questions{
+  padding-bottom:-1rem;
+}
+ 
+
+
+@media (max-width:900px){
+  main{
+    flex-direction: column;
+  }
+
+  .container1 , 
+.container2{
+  border-radius: 0.8rem;
+  border: 3px solid;
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  background-color: white;
+}
+button{
+  border: none;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  letter-spacing: 1rem;
+  cursor: pointer;
+}
+
+.numer{
+  border: 1px solid blue;
+  margin: 0rem;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 0.5rem;
+}
+.number3,
+.number{
+  /* border:gray; */
+  border: 1px solid rgb(202, 202, 202);
+  margin: 0rem;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 0.5rem;
+}
+.big-container{
+  justify-content: center;
+  gap: 1rem;
+}
+
+}
